@@ -26,6 +26,8 @@ Route::get('/', function () {
 |
 */
 
+Route::get('test', 'TestController@index');
+
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
 
